@@ -1,0 +1,425 @@
+
+.container{
+    margin: 30px auto;
+    width: 100%;
+    
+}
+
+
+.offset-0 {    
+    padding-left: 0;    
+    padding-right: 0;
+}
+
+.form-control{
+   background-color:  #f2f2f2;
+    position: relative;
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px 0px 2px 10px;
+}
+
+.search-mail-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    
+    width: 5rem;
+}
+
+.calendar-input{
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 5rem;
+    height: 80%;
+    border: none;
+    border-radius: 10px;
+}
+
+.main-logo{
+    display: flex;
+    min-height: 50vh;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+    border-top: 1px solid gray;
+}
+
+.searchResults{
+   
+     background-color: bisque; 
+    
+    display:none;
+    padding: 7px;
+    
+}
+
+
+
+.resultmailcounter
+{
+    font-weight: bold;
+    color:gray;
+}
+
+.searchActive{
+    border-top: 2px solid rgb(201, 201, 201);
+    background-color: rgb(240, 240, 240);
+    padding: 7px;
+    border-bottom: 2px solid rgb(201, 201, 201);
+    color:gray;
+}
+
+.searchActive p{
+    display: inline-block;
+    font-weight: bold;
+    border-right: 1px solid black;
+}
+
+.searchActive span{
+    font-weight: bold;
+}
+
+.iconArrowDate{
+    display:none;
+}
+
+.iconArrowFrom{
+    width: 15px;
+    margin-left: 3px;
+}
+
+.contents1{
+    padding: 40px, 0px, 7px, 14px;
+    border-bottom: 1px solid gray;
+    background-color: #f3f3f3;
+}
+
+.svgSenderMatch{
+    margin-left: 18px;
+    font-weight: bold;
+}
+
+.svgRecipientMatch{
+    margin-left: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.svgRecipientMatchDiv{
+    width: 80%;
+}
+
+
+.subject{
+    font-size: medium;
+    letter-spacing: 0.15rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+.iconClip{
+    width: 18px;
+    position: absolute;
+    top: 2px;
+    
+    right: 135px;
+}
+
+.contents1:hover svg path,
+.contents1:hover{
+    fill: blue;
+    color: blue;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+
+
+.spMail{
+    width: 15px;
+    position: absolute;
+    height: 50px;;
+}
+
+.time{
+    position: absolute;
+    right: 55px;
+    top: 2px;
+    
+}
+
+.sideArrow{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 40px;
+    top: 7px;
+}
+
+
+.recipientCounter{
+    position: absolute;
+    right: 55px;
+    top: 35%;
+    /* margin-top: 5px; */
+    /* padding: 5px; */
+    /* width: 35px; */
+    border-radius: 5px;
+    background-color: gray;
+    
+    color: white;
+    text-align: center;
+}
+
+.email-open-button
+{
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 2;
+    position: absolute;
+}
+
+
+
+/*DESKTOP DISPLAY-------------------*/
+
+
+@media only screen and (min-width: 762px) {
+
+    
+.container{
+    margin: 30px auto;
+    width: 80%;
+    
+}
+
+.offset-0 {    
+    padding-left: 0;    
+    padding-right: 0;
+}
+
+.form-control{
+   background-color:  #f2f2f2;
+    position: relative;
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px 0px 2px 10px;
+}
+
+.search-mail-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    
+    width: 5rem;
+}
+
+.calendar-input{
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 5rem;
+    height: 80%;
+    border: none;
+    border-radius: 10px;
+}
+
+.main-logo{
+    display: flex;
+    min-height: 50vh;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.searchActive {
+
+    background-color: rgb(240, 240, 240);
+    border-top: 2px solid rgb(201, 201, 201);
+    overflow: hidden;
+    padding: 5px;
+    border-bottom: 2px solid rgb(201, 201, 201);
+    color:gray;
+    
+}
+
+.searchActive p{
+    border-right: 0;
+}
+
+.from{
+   
+    display: inline-block;
+    width: 15%;
+}
+
+.toPerson{
+    
+    display: inline-block;
+    width: 30%;
+}
+
+.subjectMessage{
+    
+    width: 35%;
+    display: inline-block;
+    
+}
+
+
+
+.dateOfMessage{
+    
+    float: right;
+    
+    margin-right: 20px;
+    
+}
+
+.iconArrowDate{
+    display: unset;
+    width: 15px;
+    margin-left: 3px;
+}
+
+.iconArrowFrom{
+    display: none;
+}
+
+.contents1{
+    padding: 5px;
+    
+}
+
+.contents1:hover svg path,
+.contents1:hover{
+    fill: blue;
+    color: blue;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+
+
+
+.svgSenderMatch{
+    margin-left: 0px;
+    font-weight: unset;
+    display: inline-block;
+    width: 14%;
+    font-size: 1.75rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+    margin-top: 5px;
+    
+}
+
+
+.svgRecipientMatchDiv{
+    display: inline-block;
+    width: 30%;
+    margin-left: 1%;
+   
+}
+
+.svgRecipientMatch{
+    margin-left: 0;
+    display: inline-block;
+    width: 65%;
+    
+    font-size: 1.75rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+    margin-top: 5px;
+}
+
+
+
+
+.subject{
+    font-weight: normal;
+    display: inline-block;    
+    width:90%;
+    font-size: medium;
+    letter-spacing: 0.15rem;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    
+}
+
+.subjectLine{
+    display: inline-block; 
+    width: 45%; 
+    
+}
+
+.iconClip{
+    
+    
+    float: right;
+    width: 20px;
+    right: unset;
+    top: unset; 
+}
+
+.time{
+    position: absolute;
+    right: 25px;
+    top: 7px;
+    font-weight: bold;
+   
+    
+}
+
+
+.sideArrow{
+    display: none;
+}
+
+.spMail{
+    display: none;
+}
+
+.recipientCounter{
+    position: unset;
+    display: inline-block;
+    margin-top: 5px;
+    
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: gray;
+    margin-left: 5%;
+    width: 8%;
+    color: white;
+    text-align: center;
+} 
+
+
+.email-open-button
+{
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 2;
+    position: absolute;
+    margin: 0;
+}
+
+}

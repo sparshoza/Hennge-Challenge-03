@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap);
+.calendar-search,body{
+    background:#f8f7f7
+}
+*{
+    font-family:'Open Sans',sans-serif;
+    outline:0
+}
+.mail-subject{
+    font-weight:600;
+    font-size:'Open Sans';
+    background:#e6e6e6;
+    color:#383838;
+    padding:2rem;
+    border-radius:1rem;
+}
+
+@media only screen and (max-width:1000px){
+    *,body{
+        margin:0
+    }
+    .calendar-date,.from,.to{
+        font-size:.9rem
+    }
+    .mail-info,.subject{
+        text-overflow:ellipsis
+    }
+    body{
+        padding:0
+    }
+    
+    .from,.to{
+        padding:0
+    }
+    .from{
+        grid-area:from
+    }
+    .to{
+        grid-area:to
+    }
+    .subject{
+        grid-area:subject
+    }
+}
+ 
